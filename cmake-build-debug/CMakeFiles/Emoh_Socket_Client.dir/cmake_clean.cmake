@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj"
+  "CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj"
   "Emoh_Socket_Client.pdb"
   "Emoh_Socket_Client.exe"
   "Emoh_Socket_Client.exe.manifest"

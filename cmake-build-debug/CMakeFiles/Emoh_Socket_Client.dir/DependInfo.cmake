@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj"
   "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/main.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

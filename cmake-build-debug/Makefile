@@ -122,6 +122,33 @@ Emoh_Socket_Client/fast:
 	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/build
 .PHONY : Emoh_Socket_Client/fast
 
+Socket.obj: Socket.cpp.obj
+
+.PHONY : Socket.obj
+
+# target to build an object file
+Socket.cpp.obj:
+	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj
+.PHONY : Socket.cpp.obj
+
+Socket.i: Socket.cpp.i
+
+.PHONY : Socket.i
+
+# target to preprocess a source file
+Socket.cpp.i:
+	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.i
+.PHONY : Socket.cpp.i
+
+Socket.s: Socket.cpp.s
+
+.PHONY : Socket.s
+
+# target to generate assembly for a file
+Socket.cpp.s:
+	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.s
+.PHONY : Socket.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... Emoh_Socket_Client
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Socket.obj
+	@echo ... Socket.i
+	@echo ... Socket.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

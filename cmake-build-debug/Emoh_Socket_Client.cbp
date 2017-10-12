@@ -80,6 +80,57 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.cpp">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.h">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.dll">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.exp">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.lib">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.pdb">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.dll">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.exp">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.lib">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.dll">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.exp">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.lib">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.pdb">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.dll">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.exp">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.lib">
+			<Option target="Emoh_Socket_Client"/>
+		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/main.cpp">
 			<Option target="Emoh_Socket_Client"/>
 		</Unit>
