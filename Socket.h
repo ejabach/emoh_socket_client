@@ -6,6 +6,7 @@
 #define EMOH_SOCKET_CLIENT_SOCKET_H
 
 #include "libs/mqtt/include/MQTTClient.h"
+#include "libs/rcSwitch/RCSwitch.h"
 
 class Socket {
 public:

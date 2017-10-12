@@ -57,6 +57,7 @@ include CMakeFiles/Emoh_Socket_Client.dir/progress.make
 include CMakeFiles/Emoh_Socket_Client.dir/flags.make
 
 CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj: CMakeFiles/Emoh_Socket_Client.dir/flags.make
+CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj: CMakeFiles/Emoh_Socket_Client.dir/includes_CXX.rsp
 CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Emoh_Socket_Client.dir\main.cpp.obj -c "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\main.cpp"
@@ -81,6 +82,7 @@ CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj.provides.build: CMakeFiles/Emoh_S
 
 
 CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj: CMakeFiles/Emoh_Socket_Client.dir/flags.make
+CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj: CMakeFiles/Emoh_Socket_Client.dir/includes_CXX.rsp
 CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj: ../Socket.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Emoh_Socket_Client.dir\Socket.cpp.obj -c "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\Socket.cpp"

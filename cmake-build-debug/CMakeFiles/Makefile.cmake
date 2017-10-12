@@ -49,5 +49,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Emoh_Socket_Client.dir/DependInfo.cmake"
+  "CMakeFiles/emoh.dir/DependInfo.cmake"
+  "CMakeFiles/libs.dir/DependInfo.cmake"
   )

@@ -110,17 +110,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Emoh_Socket_Client
+# Target rules for targets named emoh
 
 # Build rule for target.
-Emoh_Socket_Client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Emoh_Socket_Client
-.PHONY : Emoh_Socket_Client
+emoh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 emoh
+.PHONY : emoh
 
 # fast build rule for target.
-Emoh_Socket_Client/fast:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/build
-.PHONY : Emoh_Socket_Client/fast
+emoh/fast:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/build
+.PHONY : emoh/fast
+
+#=============================================================================
+# Target rules for targets named libs
+
+# Build rule for target.
+libs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 libs
+.PHONY : libs
+
+# fast build rule for target.
+libs/fast:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/build
+.PHONY : libs/fast
 
 Socket.obj: Socket.cpp.obj
 
@@ -128,7 +141,7 @@ Socket.obj: Socket.cpp.obj
 
 # target to build an object file
 Socket.cpp.obj:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.obj
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.obj
 .PHONY : Socket.cpp.obj
 
 Socket.i: Socket.cpp.i
@@ -137,7 +150,7 @@ Socket.i: Socket.cpp.i
 
 # target to preprocess a source file
 Socket.cpp.i:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.i
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.i
 .PHONY : Socket.cpp.i
 
 Socket.s: Socket.cpp.s
@@ -146,8 +159,62 @@ Socket.s: Socket.cpp.s
 
 # target to generate assembly for a file
 Socket.cpp.s:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/Socket.cpp.s
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.s
 .PHONY : Socket.cpp.s
+
+libs/rcSwitch/RCSwitch.obj: libs/rcSwitch/RCSwitch.cpp.obj
+
+.PHONY : libs/rcSwitch/RCSwitch.obj
+
+# target to build an object file
+libs/rcSwitch/RCSwitch.cpp.obj:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.obj
+.PHONY : libs/rcSwitch/RCSwitch.cpp.obj
+
+libs/rcSwitch/RCSwitch.i: libs/rcSwitch/RCSwitch.cpp.i
+
+.PHONY : libs/rcSwitch/RCSwitch.i
+
+# target to preprocess a source file
+libs/rcSwitch/RCSwitch.cpp.i:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.i
+.PHONY : libs/rcSwitch/RCSwitch.cpp.i
+
+libs/rcSwitch/RCSwitch.s: libs/rcSwitch/RCSwitch.cpp.s
+
+.PHONY : libs/rcSwitch/RCSwitch.s
+
+# target to generate assembly for a file
+libs/rcSwitch/RCSwitch.cpp.s:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.s
+.PHONY : libs/rcSwitch/RCSwitch.cpp.s
+
+libs/wiringPi/wiringPi.obj: libs/wiringPi/wiringPi.c.obj
+
+.PHONY : libs/wiringPi/wiringPi.obj
+
+# target to build an object file
+libs/wiringPi/wiringPi.c.obj:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.obj
+.PHONY : libs/wiringPi/wiringPi.c.obj
+
+libs/wiringPi/wiringPi.i: libs/wiringPi/wiringPi.c.i
+
+.PHONY : libs/wiringPi/wiringPi.i
+
+# target to preprocess a source file
+libs/wiringPi/wiringPi.c.i:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.i
+.PHONY : libs/wiringPi/wiringPi.c.i
+
+libs/wiringPi/wiringPi.s: libs/wiringPi/wiringPi.c.s
+
+.PHONY : libs/wiringPi/wiringPi.s
+
+# target to generate assembly for a file
+libs/wiringPi/wiringPi.c.s:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.s
+.PHONY : libs/wiringPi/wiringPi.c.s
 
 main.obj: main.cpp.obj
 
@@ -155,7 +222,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -164,7 +231,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,7 +240,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -182,12 +249,19 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Emoh_Socket_Client
 	@echo ... edit_cache
+	@echo ... emoh
 	@echo ... rebuild_cache
+	@echo ... libs
 	@echo ... Socket.obj
 	@echo ... Socket.i
 	@echo ... Socket.s
+	@echo ... libs/rcSwitch/RCSwitch.obj
+	@echo ... libs/rcSwitch/RCSwitch.i
+	@echo ... libs/rcSwitch/RCSwitch.s
+	@echo ... libs/wiringPi/wiringPi.obj
+	@echo ... libs/wiringPi/wiringPi.i
+	@echo ... libs/wiringPi/wiringPi.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

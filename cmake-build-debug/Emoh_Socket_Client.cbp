@@ -17,53 +17,59 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Emoh_Socket_Client">
-				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Emoh_Socket_Client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Emoh_Socket_Client"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Emoh_Socket_Client/fast">
-				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Emoh_Socket_Client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Emoh_Socket_Client/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="emoh">
+				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/emoh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 emoh"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="emoh/fast">
+				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/emoh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 emoh/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -79,60 +85,120 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="libs">
+				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/liblibs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 libs"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libs/fast">
+				<Option output="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/liblibs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt"/>
+					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 libs/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.cpp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="emoh"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.h">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="emoh"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.dll">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.exp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.lib">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3a.pdb">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.dll">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.exp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3as.lib">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.dll">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.exp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.lib">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3c.pdb">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.dll">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.exp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/lib/paho-mqtt3cs.lib">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch/RCSwitch.cpp">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch/RCSwitch.h">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi/wiringPi.c">
+			<Option target="libs"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/wiringPi/wiringPi.h">
+			<Option target="libs"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/main.cpp">
-			<Option target="Emoh_Socket_Client"/>
+			<Option target="emoh"/>
 		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

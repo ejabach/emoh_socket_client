@@ -207,8 +207,14 @@ Emoh_Socket_Client_BINARY_DIR:STATIC=C:/Users/Jan/Documents/Projects/Emoh Projec
 //Value Computed by CMake
 Emoh_Socket_Client_SOURCE_DIR:STATIC=C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client
 
+//Dependencies for target
+Emoh_Socket_client_LIB_DEPENDS:STATIC=
+
 //Path to a library.
 libs/mqtt/include:FILEPATH=libs/mqtt/include-NOTFOUND
+
+//Dependencies for target
+libs_LIB_DEPENDS:STATIC=
 
 //Path to a library.
 mqtt_lib:FILEPATH=mqtt_lib-NOTFOUND

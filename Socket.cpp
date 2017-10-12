@@ -5,6 +5,6 @@
 #include "Socket.h"
 
 void Socket::test() {
-    MQTTClient client = new MQTTClient();
-
+    MQTTClient client;
+    RCSwitch rcSwitch();
 }

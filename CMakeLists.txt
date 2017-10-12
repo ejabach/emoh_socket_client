@@ -3,28 +3,43 @@ project(Emoh_Socket_Client)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES
-        libs/mqtt/include/MQTTClient.h
-        libs/mqtt/lib/paho-mqtt3a.dll
-        libs/mqtt/lib/paho-mqtt3a.exp
-        libs/mqtt/lib/paho-mqtt3a.lib
-        libs/mqtt/lib/paho-mqtt3a.pdb
-        libs/mqtt/lib/paho-mqtt3as.dll
-        libs/mqtt/lib/paho-mqtt3as.exp
-        libs/mqtt/lib/paho-mqtt3as.lib
-        libs/mqtt/lib/paho-mqtt3c.dll
-        libs/mqtt/lib/paho-mqtt3c.exp
-        libs/mqtt/lib/paho-mqtt3c.lib
-        libs/mqtt/lib/paho-mqtt3c.pdb
-        libs/mqtt/lib/paho-mqtt3cs.dll
-        libs/mqtt/lib/paho-mqtt3cs.exp
-        libs/mqtt/lib/paho-mqtt3cs.lib
+set(WIRING_PI libs/wiringPi)
+set(MQTT libs/mqtt)
+set(RC_SWITCH libs/rcSwitch)
 
+include_directories(${WIRING_PI} ${MQTT} ${RC_SWITCH})
+
+set(EXECUTABLES
         main.cpp
         Socket.cpp
         Socket.h
         )
 
-add_executable(Emoh_Socket_Client ${SOURCE_FILES})
+set(LIBRARIES
+        ${WIRING_PI}/wiringPi.h
+        ${WIRING_PI}/wiringPi.c
 
-include_directories()
+        ${MQTT}/include/MQTTClient.h
+        ${MQTT}/lib/paho-mqtt3a.dll
+        ${MQTT}/lib/paho-mqtt3a.exp
+        ${MQTT}/lib/paho-mqtt3a.lib
+        ${MQTT}/lib/paho-mqtt3a.pdb
+        ${MQTT}/lib/paho-mqtt3as.dll
+        ${MQTT}/lib/paho-mqtt3as.exp
+        ${MQTT}/lib/paho-mqtt3as.lib
+        ${MQTT}/lib/paho-mqtt3c.dll
+        ${MQTT}/lib/paho-mqtt3c.exp
+        ${MQTT}/lib/paho-mqtt3c.lib
+        ${MQTT}/lib/paho-mqtt3c.pdb
+        ${MQTT}/lib/paho-mqtt3cs.dll
+        ${MQTT}/lib/paho-mqtt3cs.exp
+        ${MQTT}/lib/paho-mqtt3cs.lib
+
+        ${RC_SWITCH}/RCSwitch.cpp
+        ${RC_SWITCH}/RCSwitch.h
+        )
+
+add_executable(emoh ${EXECUTABLES})
+add_library(libs ${LIBRARIES})
+
+#target_link_libraries(emoh ${WIRING_PI} ${MQTT} ${RC_SWITCH})

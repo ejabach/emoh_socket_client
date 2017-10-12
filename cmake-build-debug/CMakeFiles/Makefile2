@@ -59,39 +59,76 @@ CMAKE_SOURCE_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Cl
 CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/Emoh_Socket_Client.dir
+# Target rules for target CMakeFiles/emoh.dir
 
 # All Build rule for target.
-CMakeFiles/Emoh_Socket_Client.dir/all:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/depend
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target Emoh_Socket_Client"
-.PHONY : CMakeFiles/Emoh_Socket_Client.dir/all
+CMakeFiles/emoh.dir/all:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/depend
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target emoh"
+.PHONY : CMakeFiles/emoh.dir/all
 
 # Include target in all.
-all: CMakeFiles/Emoh_Socket_Client.dir/all
+all: CMakeFiles/emoh.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Emoh_Socket_Client.dir/rule: cmake_check_build_system
+CMakeFiles/emoh.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Emoh_Socket_Client.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/emoh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/Emoh_Socket_Client.dir/rule
+.PHONY : CMakeFiles/emoh.dir/rule
 
 # Convenience name for target.
-Emoh_Socket_Client: CMakeFiles/Emoh_Socket_Client.dir/rule
+emoh: CMakeFiles/emoh.dir/rule
 
-.PHONY : Emoh_Socket_Client
-
-# clean rule for target.
-CMakeFiles/Emoh_Socket_Client.dir/clean:
-	$(MAKE) -f CMakeFiles\Emoh_Socket_Client.dir\build.make CMakeFiles/Emoh_Socket_Client.dir/clean
-.PHONY : CMakeFiles/Emoh_Socket_Client.dir/clean
+.PHONY : emoh
 
 # clean rule for target.
-clean: CMakeFiles/Emoh_Socket_Client.dir/clean
+CMakeFiles/emoh.dir/clean:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/clean
+.PHONY : CMakeFiles/emoh.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/emoh.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/libs.dir
+
+# All Build rule for target.
+CMakeFiles/libs.dir/all:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/depend
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=4,5,6 "Built target libs"
+.PHONY : CMakeFiles/libs.dir/all
+
+# Include target in all.
+all: CMakeFiles/libs.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/libs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 3
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/libs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/libs.dir/rule
+
+# Convenience name for target.
+libs: CMakeFiles/libs.dir/rule
+
+.PHONY : libs
+
+# clean rule for target.
+CMakeFiles/libs.dir/clean:
+	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/clean
+.PHONY : CMakeFiles/libs.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/libs.dir/clean
 
 .PHONY : clean
 
