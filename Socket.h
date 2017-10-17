@@ -5,12 +5,25 @@
 #ifndef EMOH_SOCKET_CLIENT_SOCKET_H
 #define EMOH_SOCKET_CLIENT_SOCKET_H
 
-#include "libs/mqtt/include/MQTTClient.h"
 #include "libs/rcSwitch/RCSwitch.h"
 
 class Socket {
+
+private:
+    const char* name;
+    const char* topic;
+    int number;
+
 public:
-    void test();
+    Socket(const char *name, const char *path, int number);
+
+    const char* getName();
+    const char* getTopic();
+    const int getNumber();
+
+    void turnOn();
+    void turnOff();
+    void toggle();
 };
 
 
