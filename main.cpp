@@ -1,34 +1,30 @@
 #include <iostream>
-#include <include/MQTTClientPersistence.h>
-#include <include/MQTTClient.h>
 
-#include "Socket.h"
-#include "mqtt_connection.h"
+#include "Switch.h"
+#include "MQTTConnection.h
+#include "mqtt_credentials.h"
 
-
-#define NUMBER_OF_SOCKETS 1
-#define
-
-const Socket sockets[NUMBER_OF_SOCKETS] = {
-    Socket("/emoh/living_room/sockets", "Living Room", 0001)
+const Switch sockets[] = {
+    Switch("/emoh/living_room/sockets", "Living Room", 0001)
 };
 
 
 
 int main() {
-    std::cout << "Starting EMOH Socket Client...\n" << std::endl;
+    std::cout << "Starting EMOH Switch Client..." << std::endl;
 
-    MQTTClient client;
-    MQTTClient_connectOptions options = MQTTClient_connectOptions_initializer;
+    MQTTConnection mqtt(MQTT_HOST, MQTT_ID);
 
-    MQTTClient_create(&client, MQTT_HOST, MQTT_ID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
 
-    for (int i = 0; i < NUMBER_OF_SOCKETS; i++)
+    for (Switch socket : sockets)
     {
-        Socket curr = sockets[i];
-        std::cout << "\t(" << i << ") " << curr.getName() << "\n" << std::endl;
-
-
+        std::cout << "Socket " << socket.getName() << std::endl;
+        std::cout << "\tSubscribing to topics:'" << std::endl;
+        for (auto topic : socket.getSubscriptions())
+        {
+            std::cout << '\t\t\'' << topic.first << '\'' << std::endl;
+            mqtt.subscribe(topic.first, topic.second);
+        }
     }
 
     return 0;

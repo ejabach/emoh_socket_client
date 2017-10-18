@@ -5,9 +5,14 @@
 #ifndef EMOH_SOCKET_CLIENT_SOCKET_H
 #define EMOH_SOCKET_CLIENT_SOCKET_H
 
-#include "libs/rcSwitch/RCSwitch.h"
+#define ACTION_TOGGLE "toggle"
+#define ACTION_TURNON "turnOn"
+#define ACTION_TURNOFF "turnOff"
 
-class Socket {
+#include "libs/rcSwitch/RCSwitch.h"
+#include "Device.h"
+
+class Switch : public Device{
 
 private:
     const char* name;
@@ -15,7 +20,9 @@ private:
     int number;
 
 public:
-    Socket(const char *name, const char *path, int number);
+    Switch(const char *name, const char *path, int number);
+
+
 
     const char* getName();
     const char* getTopic();

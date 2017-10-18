@@ -11,9 +11,9 @@ include_directories(${WIRING_PI} ${MQTT} ${RC_SWITCH})
 
 set(EXECUTABLES
         main.cpp
-        Socket.cpp
-        Socket.h
-        defines.h mqtt_connection.h MQTTConnection.cpp MQTTConnection.h)
+        Switch.cpp
+        Switch.h
+        defines.h mqtt_credentials.h MQTTConnection.cpp MQTTConnection.h Device.cpp Device.h)
 
 set(LIBRARIES
         ${WIRING_PI}/wiringPi.h

@@ -2,9 +2,9 @@
 // Created by Jan on 12.10.2017.
 //
 
-#include "Socket.h"
+#include "Switch.h"
 
-void Socket::test() {
+void Switch::test() {
     MQTTClient client;
     RCSwitch rcSwitch();
 }
