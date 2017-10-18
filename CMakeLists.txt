@@ -13,7 +13,7 @@ set(EXECUTABLES
         main.cpp
         Socket.cpp
         Socket.h
-        defines.h mqtt_connection.h)
+        defines.h mqtt_connection.h MQTTConnection.cpp MQTTConnection.h)
 
 set(LIBRARIES
         ${WIRING_PI}/wiringPi.h
