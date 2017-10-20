@@ -6,18 +6,45 @@
 #define EMOH_SOCKET_CLIENT_MQTTCONNECTION_H
 
 #include <map>
+#include <vector>
 #include <include/MQTTClient.h>
 
-enum MQTTConnection_Persistence
-{
-    DEFAULT = MQTTCLIENT_PERSISTENCE_DEFAULT,
-    NONE    = MQTTCLIENT_PERSISTENCE_NONE
-};
+#include "Device.h"
+#include "mqtt_credentials.h"
+#include "MQTTException.h"
+
+using namespace std;
 
 class MQTTConnection {
 private:
-    std::map callbacks<const char*, void *(const char*)[]>;
+    /**
+     * Hash that maps the subscription topics to a dynamic array of pairs, containing a reference to the object
+     * and its callback function.
+     */
+    map callbacks <string, vector <pair <Device*, void (Device::*)(const string, const string)>>>;
+
+    /**
+     * Internal function that calls all registered callback functions as soon as a message arrives on the corresponding
+     * topic.
+     * @param context
+     * @param topic
+     * @param topicLen
+     * @param message
+     * @return
+     */
     int messageArrived(void *context, char *topic, int topicLen, MQTTClient_message *message);
+
+    /**
+     * Internal handler for the case that the connection is lost
+     * @param context
+     * @param cause
+     */
+    void connectionLost(void *context, char *cause);
+
+    /**
+     * Real connection struct
+     */
+    MQTTClient client;
 
 public:
     /**
@@ -26,10 +53,43 @@ public:
      * @param id The Client ID
      * @param persistence States if and how messages are stored in case of power loss
      */
-    MQTTConnection(const char* address, const char* id, MQTTConnection_Persistence persistence = DEFAULT);
+    MQTTConnection(string address, string id, Persistence persistence = DEFAULT);
 
-    void subscribe(const char* topic, void *callback(const char*));
-    void publish(const char* topic, const char* payload);
+    /**
+     * Closes the MQTT connection
+     */
+    ~MQTTConnection();
+
+    /**
+     * Enum that holds the possible persistence options.
+     */
+    enum Persistence
+    {
+        DEFAULT = MQTTCLIENT_PERSISTENCE_DEFAULT,
+        NONE    = MQTTCLIENT_PERSISTENCE_NONE
+    };
+
+    /**
+     * Let a device subscribe to a new topic.
+     * As soon as a message arrives at given topic, the correpsonding callback function is called.
+     * @param topic
+     * @param context
+     * @param callback
+     */
+    void subscribe(string topic, Device *context, void (Device::*callback)(const string, const string));
+
+    /**
+     * Published the given payload on the specified topic.
+     * @param topic
+     * @param payload
+     */
+    void publish(string topic, string payload);
+
+    /**
+     * Prints the given error on the /emoh/error topic.
+     * @param error
+     */
+    void printError(string error);
 };
 
 

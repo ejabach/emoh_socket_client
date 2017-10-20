@@ -9,24 +9,18 @@
 #define ACTION_TURNON "turnOn"
 #define ACTION_TURNOFF "turnOff"
 
-#include "libs/rcSwitch/RCSwitch.h"
+#include <libs/rcSwitch/RCSwitch.h>
 #include "Device.h"
 
-class Switch : public Device{
+class Switch : public Device
+{
 
 private:
-    const char* name;
-    const char* topic;
     int number;
+    void handleMessageArrived(const string topic, const string payload) override;
 
 public:
-    Switch(const char *name, const char *path, int number);
-
-
-
-    const char* getName();
-    const char* getTopic();
-    const int getNumber();
+    Switch(MQTTConnection *connection, string topic, int number);
 
     void turnOn();
     void turnOff();

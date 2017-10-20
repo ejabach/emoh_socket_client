@@ -6,12 +6,20 @@
 #define EMOH_SOCKET_CLIENT_DEVICE_H
 
 #include <map>
+#include <string>
+#include "MQTTConnection.h"
+
+using namespace std;
 
 class Device {
-private:
-    virtual std::map<const char*, void *(const char*)> subscriptions;
+protected:
+    const string topic;
+    MQTTConnection *mqttConnection;
+
+    virtual void handleMessageArrived(const string topic, const string payload) = 0;
+
 public:
-    virtual std::map<const char*, void *(const char*)> getSubscriptions();
+    Device(MQTTConnection *mqttConnection, const string topic);
 };
 
 

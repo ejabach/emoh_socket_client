@@ -13,7 +13,7 @@ set(EXECUTABLES
         main.cpp
         Switch.cpp
         Switch.h
-        defines.h mqtt_credentials.h MQTTConnection.cpp MQTTConnection.h Device.cpp Device.h)
+        defines.h mqtt_credentials.h MQTTConnection.cpp MQTTConnection.h Device.cpp Device.h MQTTException.cpp MQTTException.h)
 
 set(LIBRARIES
         ${WIRING_PI}/wiringPi.h

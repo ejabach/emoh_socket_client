@@ -3,3 +3,9 @@
 //
 
 #include "Device.h"
+
+Device::Device(MQTTConnection *mqttConnection, const string topic) : topic(topic) {
+    this->mqttConnection = mqttConnection;
+
+    this->mqttConnection->subscribe(this->topic, this, handleMessageArrived);
+}

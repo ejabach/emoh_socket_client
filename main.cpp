@@ -2,18 +2,11 @@
 
 #include "Switch.h"
 #include "MQTTConnection.h
-#include "mqtt_credentials.h"
-
-const Switch sockets[] = {
-    Switch("/emoh/living_room/sockets", "Living Room", 0001)
-};
-
-
 
 int main() {
     std::cout << "Starting EMOH Switch Client..." << std::endl;
 
-    MQTTConnection mqtt(MQTT_HOST, MQTT_ID);
+
 
 
     for (Switch socket : sockets)
