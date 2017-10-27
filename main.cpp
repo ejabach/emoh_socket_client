@@ -1,23 +1,39 @@
 #include <iostream>
 
 #include "Switch.h"
-#include "MQTTConnection.h
+#include "defines.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Starting EMOH Switch Client..." << std::endl;
+    cout << "Starting EMOH Switch Client..." << endl;
 
-
-
-
-    for (Switch socket : sockets)
+    MQTTConnection *connection = nullptr;
+    try {
+        printf("Trying to connect to MQTT Broker:\n\tHOST:%s\n\tID:%s\n", MQTT_HOST, MQTT_ID);
+        connection = new MQTTConnection(MQTT_HOST, MQTT_ID);
+    }
+    catch (MQTTException exception)
     {
-        std::cout << "Socket " << socket.getName() << std::endl;
-        std::cout << "\tSubscribing to topics:'" << std::endl;
-        for (auto topic : socket.getSubscriptions())
-        {
-            std::cout << '\t\t\'' << topic.first << '\'' << std::endl;
-            mqtt.subscribe(topic.first, topic.second);
-        }
+        cout << "Error connection to MQTT: " + string(exception.what()) << endl;
+        return 0;
+    }
+    cout << "Connected successfully!" << endl;
+
+    Switch switches[] = { Switch(connection, SWITCH_TOPIC, 1) };
+
+    cout << "Registered Switches: " << endl;
+    for (Switch s : switches)
+    {
+        cout << s.getTopic() << endl;
+    }
+
+    cout << "Waiting for incoming requests..." << endl;
+    cout << "Quit by pressing 'q' or 'Q'" << endl;
+    int quit = getchar();
+    while (! (quit == 'q' || quit == 'Q'))
+    {
+        quit = getchar();
     }
 
     return 0;

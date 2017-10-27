@@ -15,13 +15,16 @@
 
 using namespace std;
 
+class Device;
+
 class MQTTConnection {
+
 private:
     /**
      * Hash that maps the subscription topics to a dynamic array of pairs, containing a reference to the object
      * and its callback function.
      */
-    map callbacks <string, vector <pair <Device*, void (Device::*)(const string, const string)>>>;
+    map<string, vector<pair<Device*, void (Device::*)(const string, const string)>>> callbacks;
 
     /**
      * Internal function that calls all registered callback functions as soon as a message arrives on the corresponding
@@ -39,7 +42,9 @@ private:
      * @param context
      * @param cause
      */
-    void connectionLost(void *context, char *cause);
+    void static connectionLost(void *context, char *cause);
+
+    int static subscribePlaceholder(void* context, char* topic, int topicLen, MQTTClient_message* msg);
 
     /**
      * Real connection struct
@@ -47,6 +52,15 @@ private:
     MQTTClient client;
 
 public:
+    /**
+     * Enum that holds the possible persistence options.
+     */
+    enum Persistence
+    {
+        DEFAULT = MQTTCLIENT_PERSISTENCE_DEFAULT,
+        NONE    = MQTTCLIENT_PERSISTENCE_NONE
+    };
+
     /**
      * Constructs a MQTTConnection object
      * @param address  The hostname of the MQTT Broker
@@ -59,15 +73,6 @@ public:
      * Closes the MQTT connection
      */
     ~MQTTConnection();
-
-    /**
-     * Enum that holds the possible persistence options.
-     */
-    enum Persistence
-    {
-        DEFAULT = MQTTCLIENT_PERSISTENCE_DEFAULT,
-        NONE    = MQTTCLIENT_PERSISTENCE_NONE
-    };
 
     /**
      * Let a device subscribe to a new topic.

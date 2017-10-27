@@ -9,3 +9,7 @@ Device::Device(MQTTConnection *mqttConnection, const string topic) : topic(topic
 
     this->mqttConnection->subscribe(this->topic, this, handleMessageArrived);
 }
+
+const string Device::getTopic() {
+    return this->topic;
+}

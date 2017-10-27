@@ -13,7 +13,15 @@ set(EXECUTABLES
         main.cpp
         Switch.cpp
         Switch.h
-        defines.h mqtt_credentials.h MQTTConnection.cpp MQTTConnection.h Device.cpp Device.h MQTTException.cpp MQTTException.h)
+        defines.h
+        mqtt_credentials.h
+        MQTTConnection.cpp
+        MQTTConnection.h
+        Device.cpp
+        Device.h
+        MQTTException.cpp
+        MQTTException.h
+        )
 
 set(LIBRARIES
         ${WIRING_PI}/wiringPi.h
@@ -39,7 +47,12 @@ set(LIBRARIES
         ${RC_SWITCH}/RCSwitch.h
         )
 
+link_directories(
+        libs/mqtt
+        libs/rcSwitch
+        )
+
 add_executable(emoh ${EXECUTABLES})
 add_library(libs ${LIBRARIES})
 
-#target_link_libraries(emoh ${WIRING_PI} ${MQTT} ${RC_SWITCH})
+target_link_libraries(emoh ${WIRING_PI} ${MQTT} ${RC_SWITCH})

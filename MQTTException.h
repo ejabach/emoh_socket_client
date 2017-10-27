@@ -16,7 +16,7 @@ private:
 public:
     MQTTException(string message);
 
-    const char* what() throw();
+    const char* what() noexcept ;
 };
 
 

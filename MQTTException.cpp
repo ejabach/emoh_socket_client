@@ -4,10 +4,13 @@
 
 #include "MQTTException.h"
 
-const char *MQTTException::what() {
+#include <utility>
+
+const char *MQTTException::what() noexcept
+{
     return ("MQTT Error - " + this->message).c_str();
 }
 
-MQTTException::MQTTException(string message) : message(message){
+MQTTException::MQTTException(string message) : message(std::move(message)){
 
 }

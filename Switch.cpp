@@ -4,9 +4,10 @@
 
 #include "Switch.h"
 
-#include <utility>
-
-Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number){}
+Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
+{
+    this->mqttConnection->subscribe(topic, this, (void (Device::*)(const string, const string))Switch::handleMessageArrived);
+}
 
 void Switch::handleMessageArrived(const string topic, const string payload)
 {

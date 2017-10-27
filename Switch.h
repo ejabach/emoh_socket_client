@@ -9,7 +9,7 @@
 #define ACTION_TURNON "turnOn"
 #define ACTION_TURNOFF "turnOff"
 
-#include <libs/rcSwitch/RCSwitch.h>
+#include <RCSwitch.h>
 #include "Device.h"
 
 class Switch : public Device
