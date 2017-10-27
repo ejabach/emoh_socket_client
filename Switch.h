@@ -8,19 +8,26 @@
 #define ACTION_TOGGLE "toggle"
 #define ACTION_TURNON "turnOn"
 #define ACTION_TURNOFF "turnOff"
+#define GPIO_PIN 10
+#define SWITCH_GROUP "11111"
 
+#include <string>
 #include <RCSwitch.h>
 #include "Device.h"
+
+using namespace std;
 
 class Switch : public Device
 {
 
 private:
-    int number;
+    static RCSwitch *rcSwitch;
+
+    string number;
     void handleMessageArrived(const string topic, const string payload) override;
 
 public:
-    Switch(MQTTConnection *connection, string topic, int number);
+    Switch(MQTTConnection *connection, string topic, string number);
 
     void turnOn();
     void turnOff();
