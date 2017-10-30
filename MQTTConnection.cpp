@@ -32,7 +32,7 @@ void MQTTConnection::publish(string topic, string payload) {
     size_t payloadLen = payload.length();
     char *payloadPtr = (char*)malloc(payloadLen);
 
-    if (*payloadPtr != nullptr)
+    if (*payloadPtr != NULL)
     {
         payload.copy(payloadPtr, payloadLen);
         message.payload = payloadPtr;
