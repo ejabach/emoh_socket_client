@@ -28,6 +28,8 @@ int main() {
         cout << s.getTopic() << endl;
     }
 
+    connection->publish("/emoh/debug/", "Testing publish...");
+
     cout << "Waiting for incoming requests..." << endl;
     cout << "Quit by pressing 'q' or 'Q'" << endl;
     int quit = getchar();
