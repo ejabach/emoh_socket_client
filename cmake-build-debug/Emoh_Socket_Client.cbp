@@ -157,6 +157,54 @@
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/defines.h">
 			<Option target="emoh"/>
 		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/include/MQTTClient.h">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/include/MQTTClientPersistence.h">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3a.dll">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3a.exp">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3a.lib">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3a.pdb">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3as.dll">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3as.exp">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3as.lib">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3c.dll">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3c.exp">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3c.lib">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3c.pdb">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3cs.dll">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3cs.exp">
+			<Option target="emoh"/>
+		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3cs.lib">
+			<Option target="emoh"/>
+		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/rcSwitch/RCSwitch.cpp">
 			<Option target="libs"/>
 		</Unit>
