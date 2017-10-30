@@ -160,6 +160,9 @@
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/include/MQTTClient.h">
 			<Option target="libs"/>
 		</Unit>
+		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/include/MQTTClientPersistence.h">
+			<Option target="libs"/>
+		</Unit>
 		<Unit filename="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt/lib/paho-mqtt3a.dll">
 			<Option target="libs"/>
 		</Unit>

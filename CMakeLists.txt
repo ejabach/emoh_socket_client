@@ -27,6 +27,7 @@ set(LIBRARIES
         #${WIRING_PI}/wiringPi.c
 
         ${MQTT}/include/MQTTClient.h
+        ${MQTT}/include/MQTTClientPersistence.h
         ${MQTT}/lib/paho-mqtt3a.dll
         ${MQTT}/lib/paho-mqtt3a.exp
         ${MQTT}/lib/paho-mqtt3a.lib
