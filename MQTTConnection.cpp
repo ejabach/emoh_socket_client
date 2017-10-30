@@ -43,6 +43,10 @@ void MQTTConnection::publish(string topic, string payload) {
         {
             cout << "Error while publishing!" << endl;
         }
+        if (MQTTClient_waitForCompletion(client, token, 10000L) != MQTTCLIENT_SUCCESS)
+        {
+            cout << "Error while waiting for completion!" << endl;
+        }
         free(payloadPtr);
     }
 }
