@@ -20,6 +20,24 @@ set(EXECUTABLES
         Device.h
         MQTTException.cpp
         MQTTException.h
+
+        ${MQTT}/lib/paho-mqtt3a.dll
+        ${MQTT}/lib/paho-mqtt3a.exp
+        ${MQTT}/lib/paho-mqtt3a.lib
+        ${MQTT}/lib/paho-mqtt3a.pdb
+        ${MQTT}/lib/paho-mqtt3as.dll
+        ${MQTT}/lib/paho-mqtt3as.exp
+        ${MQTT}/lib/paho-mqtt3as.lib
+        ${MQTT}/lib/paho-mqtt3c.dll
+        ${MQTT}/lib/paho-mqtt3c.exp
+        ${MQTT}/lib/paho-mqtt3c.lib
+        ${MQTT}/lib/paho-mqtt3c.pdb
+        ${MQTT}/lib/paho-mqtt3cs.dll
+        ${MQTT}/lib/paho-mqtt3cs.exp
+        ${MQTT}/lib/paho-mqtt3cs.lib
+
+        ${MQTT}/include/MQTTClient.h
+        ${MQTT}/include/MQTTClientPersistence.h
         )
 
 set(LIBRARIES
@@ -38,22 +56,4 @@ link_directories(
 add_executable(emoh ${EXECUTABLES})
 add_library(libs ${LIBRARIES})
 
-target_link_libraries(emoh wiringPi
-
-        ${MQTT}/lib/paho-mqtt3a.dll
-        ${MQTT}/lib/paho-mqtt3a.exp
-        ${MQTT}/lib/paho-mqtt3a.lib
-        ${MQTT}/lib/paho-mqtt3a.pdb
-        ${MQTT}/lib/paho-mqtt3as.dll
-        ${MQTT}/lib/paho-mqtt3as.exp
-        ${MQTT}/lib/paho-mqtt3as.lib
-        ${MQTT}/lib/paho-mqtt3c.dll
-        ${MQTT}/lib/paho-mqtt3c.exp
-        ${MQTT}/lib/paho-mqtt3c.lib
-        ${MQTT}/lib/paho-mqtt3c.pdb
-        ${MQTT}/lib/paho-mqtt3cs.dll
-        ${MQTT}/lib/paho-mqtt3cs.exp
-        ${MQTT}/lib/paho-mqtt3cs.lib
-
-        ${MQTT}/include/MQTTClient.h
-        ${MQTT}/include/MQTTClientPersistence.h)
+target_link_libraries(emoh wiringPi)
