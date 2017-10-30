@@ -20,11 +20,6 @@ set(EXECUTABLES
         Device.h
         MQTTException.cpp
         MQTTException.h
-        )
-
-set(LIBRARIES
-        #${WIRING_PI}/wiringPi.h
-        #${WIRING_PI}/wiringPi.c
 
         ${MQTT}/include/MQTTClient.h
         ${MQTT}/include/MQTTClientPersistence.h
@@ -42,6 +37,11 @@ set(LIBRARIES
         ${MQTT}/lib/paho-mqtt3cs.dll
         ${MQTT}/lib/paho-mqtt3cs.exp
         ${MQTT}/lib/paho-mqtt3cs.lib
+        )
+
+set(LIBRARIES
+        #${WIRING_PI}/wiringPi.h
+        #${WIRING_PI}/wiringPi.c
 
         ${RC_SWITCH}/RCSwitch.cpp
         ${RC_SWITCH}/RCSwitch.h
