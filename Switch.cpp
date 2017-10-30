@@ -3,7 +3,7 @@
 //
 
 #include "Switch.h"
-
+#include <iostream>
 Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
 {
 
@@ -11,6 +11,7 @@ Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(co
 
 void Switch::handleMessageArrived(const string topic, const string payload)
 {
+    std::cout << "Received msg on topic" << topic << std::endl;
     if (payload == ACTION_TOGGLE)
     {
         this->toggle();
