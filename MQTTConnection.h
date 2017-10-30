@@ -8,8 +8,7 @@
 #include <map>
 #include <vector>
 
-
-#include <include/MQTTClient.h>
+#include <MQTTClient.h>
 
 #include "Device.h"
 #include "mqtt_credentials.h"
