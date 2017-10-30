@@ -15,7 +15,6 @@
     <list default="true" id="c9ba3eda-6dfc-4b0b-8eaa-6ec4e6d2b190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MQTTConnection.h" afterPath="$PROJECT_DIR$/MQTTConnection.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/linklibs.rsp" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/linklibs.rsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Emoh_Socket_Client.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Emoh_Socket_Client.cbp" />
     </list>
@@ -29,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MQTTConnection.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MQTTConnection.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="97" lean-forward="true" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
+              <caret line="7" column="97" lean-forward="false" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -123,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="480">
+              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -159,8 +158,8 @@
         <option value="$PROJECT_DIR$/libs/rcSwitch/RCSwitch.h" />
         <option value="$PROJECT_DIR$/Device.cpp" />
         <option value="$PROJECT_DIR$/libs/mqtt/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/MQTTConnection.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -466,7 +465,7 @@
       <workItem from="1508927251104" duration="13000" />
       <workItem from="1508927278632" duration="2903000" />
       <workItem from="1509098133668" duration="132000" />
-      <workItem from="1509385891453" duration="5489000" />
+      <workItem from="1509385891453" duration="5791000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for EMOH SOCKET CLIENT.">
       <created>1507235669128</created>
@@ -594,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509394315945</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Links mqtt libraries (fix)">
+      <created>1509394958568</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1509394958568</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72133000" />
+    <option name="totallyTimeSpent" value="72435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -994,18 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="97" lean-forward="true" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
+          <caret line="7" column="97" lean-forward="false" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
           <folding />
         </state>
       </provider>
@@ -1014,6 +1012,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
           <folding />
         </state>
       </provider>
