@@ -24,8 +24,8 @@ set(EXECUTABLES
         )
 
 set(LIBRARIES
-        ${WIRING_PI}/wiringPi.h
-        ${WIRING_PI}/wiringPi.c
+        #${WIRING_PI}/wiringPi.h
+        #${WIRING_PI}/wiringPi.c
 
         ${MQTT}/include/MQTTClient.h
         ${MQTT}/lib/paho-mqtt3a.dll

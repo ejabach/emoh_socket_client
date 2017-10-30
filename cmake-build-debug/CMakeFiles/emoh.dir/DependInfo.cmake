@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/CMakeFiles/emoh.dir/Socket.cpp.obj"
-  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/main.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/cmake-build-debug/CMakeFiles/emoh.dir/main.cpp.obj"
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/cmake-build-debug/CMakeFiles/emoh.dir/Device.cpp.obj"
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/cmake-build-debug/CMakeFiles/emoh.dir/MQTTConnection.cpp.obj"
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/cmake-build-debug/CMakeFiles/emoh.dir/MQTTException.cpp.obj"
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Switch.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/cmake-build-debug/CMakeFiles/emoh.dir/Switch.cpp.obj"
+  "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/main.cpp" "C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/cmake-build-debug/CMakeFiles/emoh.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

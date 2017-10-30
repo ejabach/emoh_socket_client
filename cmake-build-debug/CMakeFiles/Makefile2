@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client"
+CMAKE_SOURCE_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/emoh.dir
@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Cl
 CMakeFiles/emoh.dir/all:
 	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/depend
 	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target emoh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target emoh"
 .PHONY : CMakeFiles/emoh.dir/all
 
 # Include target in all.
@@ -75,9 +75,9 @@ all: CMakeFiles/emoh.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/emoh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" 6
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/emoh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/emoh.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ clean: CMakeFiles/emoh.dir/clean
 CMakeFiles/libs.dir/all:
 	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/depend
 	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" --progress-num=4,5,6 "Built target libs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target libs"
 .PHONY : CMakeFiles/libs.dir/all
 
 # Include target in all.
@@ -112,9 +112,9 @@ all: CMakeFiles/libs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/libs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/libs.dir/rule
 
 # Convenience name for target.
