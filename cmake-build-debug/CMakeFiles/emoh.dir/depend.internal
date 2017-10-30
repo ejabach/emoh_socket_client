@@ -24,7 +24,6 @@ CMakeFiles/emoh.dir/Switch.cpp.obj
  ../libs/mqtt/include/MQTTClient.h
  ../libs/mqtt/include/MQTTClientPersistence.h
  ../libs/rcSwitch/RCSwitch.h
- ../libs/wiringPi/wiringPi.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.h
@@ -35,7 +34,6 @@ CMakeFiles/emoh.dir/main.cpp.obj
  ../libs/mqtt/include/MQTTClient.h
  ../libs/mqtt/include/MQTTClientPersistence.h
  ../libs/rcSwitch/RCSwitch.h
- ../libs/wiringPi/wiringPi.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.h
  C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.h

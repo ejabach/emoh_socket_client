@@ -46,8 +46,6 @@ wiringPi.h
 stdint.h
 -
 
-../libs/wiringPi/wiringPi.h
-
 C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.cpp
 Device.h
 C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h

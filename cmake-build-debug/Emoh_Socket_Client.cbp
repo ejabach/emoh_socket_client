@@ -34,7 +34,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/wiringPi"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/rcSwitch"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
@@ -58,7 +57,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/wiringPi"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/rcSwitch"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
@@ -92,7 +90,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/wiringPi"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/rcSwitch"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
@@ -116,7 +113,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/wiringPi"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/mqtt"/>
 					<Add directory="C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/libs/rcSwitch"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>

@@ -3,11 +3,10 @@ project(Emoh_Socket_Client)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(WIRING_PI libs/wiringPi)
 set(MQTT libs/mqtt)
 set(RC_SWITCH libs/rcSwitch)
 
-include_directories(${WIRING_PI} ${MQTT} ${RC_SWITCH})
+include_directories(${MQTT} ${RC_SWITCH})
 
 set(EXECUTABLES
         main.cpp
@@ -55,4 +54,4 @@ link_directories(
 add_executable(emoh ${EXECUTABLES})
 add_library(libs ${LIBRARIES})
 
-target_link_libraries(emoh ${WIRING_PI})
+target_link_libraries(emoh wiringPi)

@@ -23,7 +23,6 @@ CMakeFiles/emoh.dir/MQTTException.cpp.obj: ../MQTTException.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../libs/mqtt/include/MQTTClient.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../libs/mqtt/include/MQTTClientPersistence.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../libs/rcSwitch/RCSwitch.h
-CMakeFiles/emoh.dir/Switch.cpp.obj: ../libs/wiringPi/wiringPi.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../Device.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../MQTTConnection.h
 CMakeFiles/emoh.dir/Switch.cpp.obj: ../MQTTException.h
@@ -34,7 +33,6 @@ CMakeFiles/emoh.dir/Switch.cpp.obj: ../mqtt_credentials.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../libs/mqtt/include/MQTTClient.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../libs/mqtt/include/MQTTClientPersistence.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../libs/rcSwitch/RCSwitch.h
-CMakeFiles/emoh.dir/main.cpp.obj: ../libs/wiringPi/wiringPi.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../Device.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../MQTTConnection.h
 CMakeFiles/emoh.dir/main.cpp.obj: ../MQTTException.h
