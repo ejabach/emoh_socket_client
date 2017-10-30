@@ -39,7 +39,11 @@ void MQTTConnection::publish(string topic, string payload) {
         message.payloadlen = payloadLen;
         message.qos = 0; // TODO: Change soon
         message.retained = 0; // ?
-        MQTTClient_publishMessage(this->client, topic.c_str(), &message, &token);
+        if (MQTTClient_publishMessage(this->client, topic.c_str(), &message, &token) != MQTTCLIENT_SUCCESS)
+        {
+            cout << "Error while publishing!" << endl;
+        }
+        free(payloadPtr);
     }
 }
 

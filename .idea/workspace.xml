@@ -15,7 +15,9 @@
     <list default="true" id="c9ba3eda-6dfc-4b0b-8eaa-6ec4e6d2b190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MQTTConnection.cpp" afterPath="$PROJECT_DIR$/MQTTConnection.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MQTTConnection.h" afterPath="$PROJECT_DIR$/MQTTConnection.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/emoh.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,19 +32,11 @@
       <file leaf-file-name="MQTTConnection.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/mqtt/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-              <folding />
+              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding>
+                <element signature="e#129#143#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,11 +44,21 @@
       <file leaf-file-name="MQTTConnection.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+            <state relative-caret-position="391">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
                 <element signature="e#40#71#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MQTTClient.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/mqtt/include/MQTTClient.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="808" column="14" lean-forward="false" selection-start-line="808" selection-start-column="14" selection-end-line="808" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -461,7 +465,7 @@
       <workItem from="1508927278632" duration="2903000" />
       <workItem from="1509098133668" duration="132000" />
       <workItem from="1509385891453" duration="7343000" />
-      <workItem from="1509403155858" duration="2411000" />
+      <workItem from="1509403155858" duration="2847000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for EMOH SOCKET CLIENT.">
       <created>1507235669128</created>
@@ -645,30 +649,44 @@
       <option name="project" value="LOCAL" />
       <updated>1509404581499</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adds publishing functionality">
+      <created>1509405595649</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1509405595649</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixes small error">
+      <created>1509405684880</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1509405684880</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76398000" />
+    <option name="totallyTimeSpent" value="76834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30965006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30965006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -704,7 +722,9 @@
     <MESSAGE value="Links mqtt libraries" />
     <MESSAGE value="Links mqtt libraries (fix)" />
     <MESSAGE value="Adds debugging step" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds debugging step" />
+    <MESSAGE value="Adds publishing functionality" />
+    <MESSAGE value="Fixes small error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes small error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -966,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/mqtt/include/MQTTClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="264" column="2" lean-forward="false" selection-start-line="264" selection-start-column="2" selection-end-line="264" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/defines.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1058,16 +1070,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <element signature="e#129#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/mqtt/include/MQTTClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="808" column="14" lean-forward="false" selection-start-line="808" selection-start-column="14" selection-end-line="808" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        <state relative-caret-position="391">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
             <element signature="e#40#71#0" expanded="true" />
           </folding>
