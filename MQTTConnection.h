@@ -7,9 +7,11 @@
 
 #include <map>
 #include <vector>
+#include <string>
 
 #include <include/MQTTClient.h>
 
+#include <iostream>
 #include "Device.h"
 #include "mqtt_credentials.h"
 #include "MQTTException.h"

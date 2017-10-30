@@ -2,7 +2,7 @@
 // Created by Jan on 18.10.2017.
 //
 
-#include <iostream>
+#include <include/MQTTClient.h>
 #include "MQTTConnection.h"
 
 
@@ -25,7 +25,22 @@ void MQTTConnection::subscribe(const string topic, Device *context, void (Device
 }
 
 void MQTTConnection::publish(string topic, string payload) {
+    cout << "Trying to publish message to topic: " << topic << endl;
+    MQTTClient_message message = MQTTClient_message_initializer;
+    MQTTClient_deliveryToken token; // for QoS >= 1
 
+    size_t payloadLen = payload.length();
+    char *payloadPtr = (char*)malloc(payloadLen);
+
+    if (*payloadPtr != nullptr)
+    {
+        payload.copy(payloadPtr, payloadLen);
+        message.payload = payloadPtr;
+        message.payloadlen = payloadLen;
+        message.qos = 0; // TODO: Change soon
+        message.retained = 0; // ?
+        MQTTClient_publishMessage(this->client, topic.c_str(), &message, &token);
+    }
 }
 
 void MQTTConnection::connectionLost(void *context, char *cause) {

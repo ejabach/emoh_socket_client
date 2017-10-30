@@ -14,7 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ba3eda-6dfc-4b0b-8eaa-6ec4e6d2b190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MQTTConnection.cpp" afterPath="$PROJECT_DIR$/MQTTConnection.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MQTTConnection.h" afterPath="$PROJECT_DIR$/MQTTConnection.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +30,9 @@
       <file leaf-file-name="MQTTConnection.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-              <folding>
-                <element signature="e#129#143#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,13 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MQTTConnection.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MQTTConnection.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+            <state relative-caret-position="238">
+              <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
               <folding>
-                <element signature="e#40#59#0" expanded="true" />
+                <element signature="e#40#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -151,11 +150,11 @@
         <option value="$PROJECT_DIR$/libs/rcSwitch/RCSwitch.h" />
         <option value="$PROJECT_DIR$/Device.cpp" />
         <option value="$PROJECT_DIR$/libs/mqtt/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/MQTTConnection.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Switch.cpp" />
-        <option value="$PROJECT_DIR$/MQTTConnection.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/MQTTConnection.h" />
+        <option value="$PROJECT_DIR$/MQTTConnection.cpp" />
       </list>
     </option>
   </component>
@@ -462,7 +461,7 @@
       <workItem from="1508927278632" duration="2903000" />
       <workItem from="1509098133668" duration="132000" />
       <workItem from="1509385891453" duration="7343000" />
-      <workItem from="1509403155858" duration="1417000" />
+      <workItem from="1509403155858" duration="2411000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for EMOH SOCKET CLIENT.">
       <created>1507235669128</created>
@@ -639,11 +638,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509404026207</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Adds debugging step">
+      <created>1509404581499</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1509404581499</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75404000" />
+    <option name="totallyTimeSpent" value="76398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1000,16 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding>
-            <element signature="e#129#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/rcSwitch/RCSwitch.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-311">
@@ -1050,22 +1046,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        <state relative-caret-position="459">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
-            <element signature="e#40#59#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/MQTTConnection.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTTConnection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#40#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
