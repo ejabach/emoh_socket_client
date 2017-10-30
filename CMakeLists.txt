@@ -56,4 +56,4 @@ link_directories(
 add_executable(emoh ${EXECUTABLES})
 add_library(libs ${LIBRARIES})
 
-target_link_libraries(emoh wiringPi)
+target_link_libraries(emoh wiringPi paho-mqtt3c)
