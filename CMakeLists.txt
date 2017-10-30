@@ -9,18 +9,6 @@ set(RC_SWITCH libs/rcSwitch)
 include_directories(${MQTT} ${RC_SWITCH})
 
 set(EXECUTABLES
-        main.cpp
-        Switch.cpp
-        Switch.h
-        defines.h
-        mqtt_credentials.h
-        MQTTConnection.cpp
-        MQTTConnection.h
-        Device.cpp
-        Device.h
-        MQTTException.cpp
-        MQTTException.h
-
         ${MQTT}/lib/paho-mqtt3a.dll
         ${MQTT}/lib/paho-mqtt3a.exp
         ${MQTT}/lib/paho-mqtt3a.lib
@@ -38,6 +26,18 @@ set(EXECUTABLES
 
         ${MQTT}/include/MQTTClient.h
         ${MQTT}/include/MQTTClientPersistence.h
+
+        main.cpp
+        Switch.cpp
+        Switch.h
+        defines.h
+        mqtt_credentials.h
+        MQTTConnection.cpp
+        MQTTConnection.h
+        Device.cpp
+        Device.h
+        MQTTException.cpp
+        MQTTException.h
         )
 
 set(LIBRARIES
