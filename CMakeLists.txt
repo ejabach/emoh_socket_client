@@ -41,19 +41,19 @@ add_library(libs ${LIBRARIES})
 target_link_libraries(emoh
         wiringPi
 
-        ${MQTT}/include/MQTTClient.h
-        ${MQTT}/include/MQTTClientPersistence.h
-        ${MQTT}/lib/paho-mqtt3a.dll
-        ${MQTT}/lib/paho-mqtt3a.exp
-        ${MQTT}/lib/paho-mqtt3a.lib
-        ${MQTT}/lib/paho-mqtt3a.pdb
-        ${MQTT}/lib/paho-mqtt3as.dll
-        ${MQTT}/lib/paho-mqtt3as.exp
-        ${MQTT}/lib/paho-mqtt3as.lib
-        ${MQTT}/lib/paho-mqtt3c.dll
-        ${MQTT}/lib/paho-mqtt3c.exp
-        ${MQTT}/lib/paho-mqtt3c.lib
-        ${MQTT}/lib/paho-mqtt3c.pdb
-        ${MQTT}/lib/paho-mqtt3cs.dll
-        ${MQTT}/lib/paho-mqtt3cs.exp
-        ${MQTT}/lib/paho-mqtt3cs.lib)
+        MQTTClient.h
+        MQTTClientPersistence.h
+        paho-mqtt3a.dll
+        paho-mqtt3a.exp
+        paho-mqtt3a.lib
+        paho-mqtt3a.pdb
+        paho-mqtt3as.dll
+        paho-mqtt3as.exp
+        paho-mqtt3as.lib
+        paho-mqtt3c.dll
+        paho-mqtt3c.exp
+        paho-mqtt3c.lib
+        paho-mqtt3c.pdb
+        paho-mqtt3cs.dll
+        paho-mqtt3cs.exp
+        paho-mqtt3cs.lib)
