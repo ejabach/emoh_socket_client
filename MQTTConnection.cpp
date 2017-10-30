@@ -2,6 +2,7 @@
 // Created by Jan on 18.10.2017.
 //
 
+#include <iostream>
 #include "MQTTConnection.h"
 
 
@@ -63,6 +64,7 @@ MQTTConnection::~MQTTConnection() {
 
 int MQTTConnection::messageArrived(void *context, char *topic, int topicLen, MQTTClient_message *message) {
     string topicStr = string(topic);
+    std::cout << "Received message on topic" << topicStr <<std::endl;
     if (message->payload == nullptr)
     {
         throw MQTTException("Invalid payload");
