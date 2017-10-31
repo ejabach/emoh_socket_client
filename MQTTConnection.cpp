@@ -8,6 +8,7 @@
 
 int MQTTConnection::subscribePlaceholder(void* context, char* topic, int topicLen, MQTTClient_message* msg)
 {
+    cout << "Received message in static placeholder" << endl;
     return static_cast<MQTTConnection*>(context)->messageArrived(context, topic, topicLen, msg);
 }
 
@@ -16,6 +17,7 @@ void MQTTConnection::printError(const string message) {
 }
 
 void MQTTConnection::subscribe(const string topic, Device *context, void (Device::*callback)(const string, const string)) {
+    cout << "Trying to subscribe to topic " << topic << endl;
     auto find = this->callbacks.find(topic);
     if (find == this->callbacks.end())
     {
