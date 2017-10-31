@@ -28,7 +28,7 @@ int main() {
         cout << s.getTopic() << endl;
     }
 
-    connection->publish("/emoh/debug/", "Testing publish...");
+    connection->publish("/emoh/debug", "Testing publish...");
 
     cout << "Waiting for incoming requests..." << endl;
     cout << "Quit by pressing 'q' or 'Q'" << endl;
