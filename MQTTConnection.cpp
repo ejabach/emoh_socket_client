@@ -78,6 +78,8 @@ MQTTConnection::MQTTConnection(string address, string id, MQTTConnection::Persis
     {
         throw MQTTException("Couldn't establish connection.");
     }
+
+    this->publish("/emoh/debug", "Testing publishing to /emoh/debug from constructor");
 }
 
 MQTTConnection::~MQTTConnection() {
