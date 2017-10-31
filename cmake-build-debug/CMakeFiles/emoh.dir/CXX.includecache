@@ -6,59 +6,115 @@
 
 #IncludeRegexTransform: 
 
-../libs/wiringPi/wiringPi.h
-
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.cpp
-Socket.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.h
-
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/Socket.h
-libs/mqtt/include/MQTTClient.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h
-libs/rcSwitch/RCSwitch.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch/RCSwitch.h
-
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h
+../libs/mqtt/include/MQTTClient.h
 stdio.h
 -
 MQTTClientPersistence.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClientPersistence.h
+../libs/mqtt/include/MQTTClientPersistence.h
 stdio.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdio.h
+../libs/mqtt/include/stdio.h
 stdlib.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdlib.h
+../libs/mqtt/include/stdlib.h
 string.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/string.h
+../libs/mqtt/include/string.h
 MQTTClient.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h
+../libs/mqtt/include/MQTTClient.h
 stdio.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdio.h
+../libs/mqtt/include/stdio.h
 stdlib.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdlib.h
+../libs/mqtt/include/stdlib.h
 string.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/string.h
+../libs/mqtt/include/string.h
 MQTTClient.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h
+../libs/mqtt/include/MQTTClient.h
 stdio.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdio.h
+../libs/mqtt/include/stdio.h
 stdlib.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/stdlib.h
+../libs/mqtt/include/stdlib.h
 string.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/string.h
+../libs/mqtt/include/string.h
 MQTTClient.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClient.h
+../libs/mqtt/include/MQTTClient.h
 
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/mqtt/include/MQTTClientPersistence.h
+../libs/mqtt/include/MQTTClientPersistence.h
 
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch/RCSwitch.h
+../libs/rcSwitch/RCSwitch.h
 Arduino.h
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/libs/rcSwitch/Arduino.h
+../libs/rcSwitch/Arduino.h
 wiringPi.h
 -
 stdint.h
 -
 
-C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Socket Client/main.cpp
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.cpp
+Device.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
+map
+-
+string
+-
+MQTTConnection.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.cpp
+include/MQTTClient.h
+-
+MQTTConnection.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTConnection.h
+map
+-
+vector
+-
+string
+-
+include/MQTTClient.h
+-
 iostream
 -
+Device.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
+mqtt_credentials.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/mqtt_credentials.h
+MQTTException.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.cpp
+MQTTException.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.h
+utility
+-
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/MQTTException.h
+exception
+-
+string
+-
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Switch.cpp
+Switch.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Switch.h
+iostream
+-
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Switch.h
+RCSwitch.h
+-
+Device.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Device.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/defines.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/main.cpp
+iostream
+-
+Switch.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/Switch.h
+defines.h
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/defines.h
+
+C:/Users/Jan/Documents/Projects/Emoh Projects/Emoh Smart Switches Client/mqtt_credentials.h
 

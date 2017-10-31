@@ -1,2 +1,2 @@
-C:\MinGW\bin\ar.exe qc liblibs.a  CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.obj CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.obj
+C:\MinGW\bin\ar.exe qc liblibs.a  CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.obj
 C:\MinGW\bin\ranlib.exe liblibs.a

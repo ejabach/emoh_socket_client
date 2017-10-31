@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/emoh.dir/main.cpp.obj"
-  "CMakeFiles/emoh.dir/Socket.cpp.obj"
+  "CMakeFiles/emoh.dir/Switch.cpp.obj"
+  "CMakeFiles/emoh.dir/MQTTConnection.cpp.obj"
+  "CMakeFiles/emoh.dir/Device.cpp.obj"
+  "CMakeFiles/emoh.dir/MQTTException.cpp.obj"
   "emoh.pdb"
   "emoh.exe"
   "emoh.exe.manifest"

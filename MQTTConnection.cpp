@@ -6,6 +6,7 @@
 
 int MQTTConnection::subscribePlaceholder(void* context, char* topic, int topicLen, MQTTClient_message* msg)
 {
+    cout << "Received message in static placeholder" << endl;
     return static_cast<MQTTConnection*>(context)->messageArrived(context, topic, topicLen, msg);
 }
 
@@ -14,6 +15,7 @@ void MQTTConnection::printError(const string message) {
 }
 
 void MQTTConnection::subscribe(const string topic, Device *context, void (Device::*callback)(const string, const string)) {
+    cout << "Trying to subscribe to topic " << topic << endl;
     auto find = this->callbacks.find(topic);
     if (find == this->callbacks.end())
     {
@@ -23,7 +25,30 @@ void MQTTConnection::subscribe(const string topic, Device *context, void (Device
 }
 
 void MQTTConnection::publish(string topic, string payload) {
+    cout << "Trying to publish message to topic: " << topic << endl;
+    MQTTClient_message message = MQTTClient_message_initializer;
+    MQTTClient_deliveryToken token; // for QoS >= 1
 
+    size_t payloadLen = payload.length();
+    char *payloadPtr = (char*)malloc(payloadLen);
+
+    if (*payloadPtr != NULL)
+    {
+        payload.copy(payloadPtr, payloadLen);
+        message.payload = payloadPtr;
+        message.payloadlen = payloadLen;
+        message.qos = 0; // TODO: Change soon
+        message.retained = 0; // ?
+        if (MQTTClient_publishMessage(this->client, topic.c_str(), &message, &token) != MQTTCLIENT_SUCCESS)
+        {
+            cout << "Error while publishing!" << endl;
+        }
+        if (MQTTClient_waitForCompletion(client, token, 10000L) != MQTTCLIENT_SUCCESS)
+        {
+            cout << "Error while waiting for completion!" << endl;
+        }
+        free(payloadPtr);
+    }
 }
 
 void MQTTConnection::connectionLost(void *context, char *cause) {
@@ -53,6 +78,8 @@ MQTTConnection::MQTTConnection(string address, string id, MQTTConnection::Persis
     {
         throw MQTTException("Couldn't establish connection.");
     }
+
+    this->publish("/emoh/debug", "Testing publishing to /emoh/debug from constructor");
 }
 
 MQTTConnection::~MQTTConnection() {
@@ -62,6 +89,7 @@ MQTTConnection::~MQTTConnection() {
 
 int MQTTConnection::messageArrived(void *context, char *topic, int topicLen, MQTTClient_message *message) {
     string topicStr = string(topic);
+    std::cout << "Received message on topic" << topicStr <<std::endl;
     if (message->payload == nullptr)
     {
         throw MQTTException("Invalid payload");

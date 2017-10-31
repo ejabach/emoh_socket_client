@@ -18,7 +18,7 @@ protected:
     const string topic;
     MQTTConnection *mqttConnection;
 
-    virtual void handleMessageArrived(string topic, string payload) = 0;
+    virtual void handleMessageArrived(const string topic, const string payload) = 0;
 
 public:
     Device(MQTTConnection *mqttConnection, string topic);

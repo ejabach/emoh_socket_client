@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client"
+CMAKE_SOURCE_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Socket Client\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jan\Documents\Projects\Emoh Projects\Emoh Smart Switches Client\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -135,32 +135,113 @@ libs/fast:
 	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/build
 .PHONY : libs/fast
 
-Socket.obj: Socket.cpp.obj
+Device.obj: Device.cpp.obj
 
-.PHONY : Socket.obj
+.PHONY : Device.obj
 
 # target to build an object file
-Socket.cpp.obj:
-	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.obj
-.PHONY : Socket.cpp.obj
+Device.cpp.obj:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Device.cpp.obj
+.PHONY : Device.cpp.obj
 
-Socket.i: Socket.cpp.i
+Device.i: Device.cpp.i
 
-.PHONY : Socket.i
+.PHONY : Device.i
 
 # target to preprocess a source file
-Socket.cpp.i:
-	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.i
-.PHONY : Socket.cpp.i
+Device.cpp.i:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Device.cpp.i
+.PHONY : Device.cpp.i
 
-Socket.s: Socket.cpp.s
+Device.s: Device.cpp.s
 
-.PHONY : Socket.s
+.PHONY : Device.s
 
 # target to generate assembly for a file
-Socket.cpp.s:
-	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Socket.cpp.s
-.PHONY : Socket.cpp.s
+Device.cpp.s:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Device.cpp.s
+.PHONY : Device.cpp.s
+
+MQTTConnection.obj: MQTTConnection.cpp.obj
+
+.PHONY : MQTTConnection.obj
+
+# target to build an object file
+MQTTConnection.cpp.obj:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTConnection.cpp.obj
+.PHONY : MQTTConnection.cpp.obj
+
+MQTTConnection.i: MQTTConnection.cpp.i
+
+.PHONY : MQTTConnection.i
+
+# target to preprocess a source file
+MQTTConnection.cpp.i:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTConnection.cpp.i
+.PHONY : MQTTConnection.cpp.i
+
+MQTTConnection.s: MQTTConnection.cpp.s
+
+.PHONY : MQTTConnection.s
+
+# target to generate assembly for a file
+MQTTConnection.cpp.s:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTConnection.cpp.s
+.PHONY : MQTTConnection.cpp.s
+
+MQTTException.obj: MQTTException.cpp.obj
+
+.PHONY : MQTTException.obj
+
+# target to build an object file
+MQTTException.cpp.obj:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTException.cpp.obj
+.PHONY : MQTTException.cpp.obj
+
+MQTTException.i: MQTTException.cpp.i
+
+.PHONY : MQTTException.i
+
+# target to preprocess a source file
+MQTTException.cpp.i:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTException.cpp.i
+.PHONY : MQTTException.cpp.i
+
+MQTTException.s: MQTTException.cpp.s
+
+.PHONY : MQTTException.s
+
+# target to generate assembly for a file
+MQTTException.cpp.s:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/MQTTException.cpp.s
+.PHONY : MQTTException.cpp.s
+
+Switch.obj: Switch.cpp.obj
+
+.PHONY : Switch.obj
+
+# target to build an object file
+Switch.cpp.obj:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Switch.cpp.obj
+.PHONY : Switch.cpp.obj
+
+Switch.i: Switch.cpp.i
+
+.PHONY : Switch.i
+
+# target to preprocess a source file
+Switch.cpp.i:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Switch.cpp.i
+.PHONY : Switch.cpp.i
+
+Switch.s: Switch.cpp.s
+
+.PHONY : Switch.s
+
+# target to generate assembly for a file
+Switch.cpp.s:
+	$(MAKE) -f CMakeFiles\emoh.dir\build.make CMakeFiles/emoh.dir/Switch.cpp.s
+.PHONY : Switch.cpp.s
 
 libs/rcSwitch/RCSwitch.obj: libs/rcSwitch/RCSwitch.cpp.obj
 
@@ -188,33 +269,6 @@ libs/rcSwitch/RCSwitch.s: libs/rcSwitch/RCSwitch.cpp.s
 libs/rcSwitch/RCSwitch.cpp.s:
 	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/rcSwitch/RCSwitch.cpp.s
 .PHONY : libs/rcSwitch/RCSwitch.cpp.s
-
-libs/wiringPi/wiringPi.obj: libs/wiringPi/wiringPi.c.obj
-
-.PHONY : libs/wiringPi/wiringPi.obj
-
-# target to build an object file
-libs/wiringPi/wiringPi.c.obj:
-	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.obj
-.PHONY : libs/wiringPi/wiringPi.c.obj
-
-libs/wiringPi/wiringPi.i: libs/wiringPi/wiringPi.c.i
-
-.PHONY : libs/wiringPi/wiringPi.i
-
-# target to preprocess a source file
-libs/wiringPi/wiringPi.c.i:
-	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.i
-.PHONY : libs/wiringPi/wiringPi.c.i
-
-libs/wiringPi/wiringPi.s: libs/wiringPi/wiringPi.c.s
-
-.PHONY : libs/wiringPi/wiringPi.s
-
-# target to generate assembly for a file
-libs/wiringPi/wiringPi.c.s:
-	$(MAKE) -f CMakeFiles\libs.dir\build.make CMakeFiles/libs.dir/libs/wiringPi/wiringPi.c.s
-.PHONY : libs/wiringPi/wiringPi.c.s
 
 main.obj: main.cpp.obj
 
@@ -253,15 +307,21 @@ help:
 	@echo ... emoh
 	@echo ... rebuild_cache
 	@echo ... libs
-	@echo ... Socket.obj
-	@echo ... Socket.i
-	@echo ... Socket.s
+	@echo ... Device.obj
+	@echo ... Device.i
+	@echo ... Device.s
+	@echo ... MQTTConnection.obj
+	@echo ... MQTTConnection.i
+	@echo ... MQTTConnection.s
+	@echo ... MQTTException.obj
+	@echo ... MQTTException.i
+	@echo ... MQTTException.s
+	@echo ... Switch.obj
+	@echo ... Switch.i
+	@echo ... Switch.s
 	@echo ... libs/rcSwitch/RCSwitch.obj
 	@echo ... libs/rcSwitch/RCSwitch.i
 	@echo ... libs/rcSwitch/RCSwitch.s
-	@echo ... libs/wiringPi/wiringPi.obj
-	@echo ... libs/wiringPi/wiringPi.i
-	@echo ... libs/wiringPi/wiringPi.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
