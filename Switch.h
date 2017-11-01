@@ -9,7 +9,7 @@
 #define ACTION_TURNON "turnOn"
 #define ACTION_TURNOFF "turnOff"
 #define GPIO_PIN 10
-#define SWITCH_GROUP "11111"
+#define SWITCH_GROUP "01001"
 
 #include <string>
 #include <RCSwitch.h>

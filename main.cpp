@@ -20,7 +20,7 @@ int main() {
     }
     cout << "Connected successfully!" << endl;
 
-    Switch switches[] = { Switch(connection, SWITCH_TOPIC, 1) };
+    Switch switches[] = { Switch(connection, SWITCH_TOPIC, "00010") };
 
     cout << "Registered Switches: " << endl;
     for (Switch s : switches)
