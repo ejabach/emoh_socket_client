@@ -27,6 +27,9 @@ set(EXECUTABLES
         ${MQTT}/include/MQTTClient.h
         ${MQTT}/include/MQTTClientPersistence.h
 
+        ${RC_SWITCH}/RCSwitch.cpp
+        ${RC_SWITCH}/RCSwitch.h
+
         main.cpp
         Switch.cpp
         Switch.h
