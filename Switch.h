@@ -23,7 +23,7 @@ class Switch : public Device
 private:
     static RCSwitch *rcSwitch;
 
-    string number;
+    int number;
     void handleMessageArrived(const string topic, const string payload) override;
 
 public:
