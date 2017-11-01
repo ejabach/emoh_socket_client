@@ -4,11 +4,11 @@
 
 #include "Switch.h"
 #include <iostream>
-Switch::Switch(MQTTConnection *connection, string topic, string number) : Device(connection, std::move(topic)), number(number)
+Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
 {
     if (this->rcSwitch == nullptr)
     {
-        Switch::rcSwitch = RCSwitch();
+        Switch::rcSwitch = new RCSwitch();
         Switch::rcSwitch->enableTransmit(GPIO_PIN);
     }
 }

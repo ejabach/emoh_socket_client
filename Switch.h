@@ -27,7 +27,7 @@ private:
     void handleMessageArrived(const string topic, const string payload) override;
 
 public:
-    Switch(MQTTConnection *connection, string topic, string number);
+    Switch(MQTTConnection *connection, string topic, int number);
 
     void turnOn();
     void turnOff();
