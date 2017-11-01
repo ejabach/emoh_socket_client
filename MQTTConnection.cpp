@@ -23,7 +23,7 @@ void MQTTConnection::subscribe(const string topic, Device *context, void (Device
     }
     this->callbacks[topic].emplace_back(pair <Device*, void (Device::*)(const string, const string)>(context, callback));
 
-    MQTTClient_subscribe(this->client, topic, 0);
+    MQTTClient_subscribe(this->client, topic.c_str(), 0);
 }
 
 void MQTTConnection::publish(string topic, string payload) {
