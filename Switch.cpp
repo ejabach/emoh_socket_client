@@ -4,7 +4,7 @@
 
 #include "Switch.h"
 #include <iostream>
-Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
+Switch::Switch(MQTTConnection *connection, string topic, string number) : Device(connection, std::move(topic)), number(number)
 {
 
 }
