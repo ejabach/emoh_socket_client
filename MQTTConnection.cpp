@@ -91,11 +91,8 @@ MQTTConnection::~MQTTConnection() {
 
 int MQTTConnection::messageArrived(void *context, char *topic, int topicLen, MQTTClient_message *message) {
     string topicStr = string(topic);
-    std::cout << "Received message on topic" << topicStr <<std::endl;
-    if (message->payload == nullptr)
-    {
-        throw MQTTException("Invalid payload");
-    }
+    std::cout << "Received message on topic " << topicStr <<std::endl;
+
     string payload = string((char*)message->payload);
     auto keySearch = this->callbacks.find(topicStr);
     if (keySearch != this->callbacks.end())
@@ -111,7 +108,9 @@ int MQTTConnection::messageArrived(void *context, char *topic, int topicLen, MQT
     }
     else
     {
-        throw MQTTException("No subscription found for topic "+topicStr);
+        // This might actually happen if there is still a message in queue for the client?
+        // TODO: Develop a buffer that passes all these messages as soon as a device subscribes
+        //throw MQTTException("No subscription found for topic "+topicStr);
     }
 
     MQTTClient_freeMessage(&message);
