@@ -4,13 +4,11 @@
 
 #include "Switch.h"
 #include <iostream>
+
+RCSwitch* Switch::rcSwitch = new RCSwitch();
+
 Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
 {
-    if (this->rcSwitch == nullptr)
-    {
-        Switch::rcSwitch = new RCSwitch();
-        Switch::rcSwitch->enableTransmit(GPIO_PIN);
-    }
 }
 
 void Switch::handleMessageArrived(const string topic, const string payload)
@@ -36,17 +34,22 @@ void Switch::handleMessageArrived(const string topic, const string payload)
 
 void Switch::toggle()
 {
+    //Switch::rcSwitch->enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TOGGLE REQUEST");
 }
 
 void Switch::turnOn()
 {
+    Switch::rcSwitch->enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TURNON REQUEST");
     Switch::rcSwitch->switchOn(SWITCH_GROUP, this->number);
+    rcSwitch->disableTransmit();
 }
 
 void Switch::turnOff()
 {
+    Switch::rcSwitch->enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TURNOFF REQUEST");
     Switch::rcSwitch->switchOff(SWITCH_GROUP, this->number);
+    rcSwitch->disableTransmit();
 }
