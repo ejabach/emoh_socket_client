@@ -7,7 +7,14 @@ using namespace std;
 
 int main() {
     try {
-        cout << "Starting EMOH Switch Client..." << endl;
+        cout << "Starting EMOH Socket Client..." << endl;
+
+        cout << "Call wiringPi setup" << endl;
+        if (wiringPiSetup() == -1)
+        {
+            cout << "Error setting up wiringPi!";
+            return 1;
+        }
 
         MQTTConnection *connection = nullptr;
         try {
