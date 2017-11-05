@@ -11,9 +11,9 @@ Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(co
 {
 }
 
-void Switch::handleMessageArrived(const string topic, const string payload)
+void Switch::handleMessageArrived(const string /* topic */, const string payload)
 {
-    std::cout << "Received msg on topic" << topic << std::endl;
+    std::cout << "Received in Socket message handler" << std::endl;
     if (payload == ACTION_TOGGLE)
     {
         this->toggle();
