@@ -5,7 +5,7 @@
 #include "Switch.h"
 #include <iostream>
 
-RCSwitch* Switch::rcSwitch = new RCSwitch();
+RCSwitch Switch::rcSwitch = RCSwitch();
 
 Switch::Switch(MQTTConnection *connection, string topic, int number) : Device(connection, std::move(topic)), number(number)
 {
@@ -36,20 +36,22 @@ void Switch::toggle()
 {
     //Switch::rcSwitch->enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TOGGLE REQUEST");
+    //Switch::rcSwitch->disableTransmit();
 }
 
 void Switch::turnOn()
 {
-    Switch::rcSwitch->enableTransmit(GPIO_PIN);
+    Switch::rcSwitch.enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TURNON REQUEST");
-    Switch::rcSwitch->switchOn(SWITCH_GROUP, this->number);
-    rcSwitch->disableTransmit();
+    cout << "Trying to turn on switch with group " << SWITCH_GROUP << " and number " << this->number << endl;
+    Switch::rcSwitch.switchOn(const_cast<char *>(SWITCH_GROUP), this->number);
+    //Switch::rcSwitch->disableTransmit();
 }
 
 void Switch::turnOff()
 {
-    Switch::rcSwitch->enableTransmit(GPIO_PIN);
+    Switch::rcSwitch.enableTransmit(GPIO_PIN);
     this->mqttConnection->publish("/emoh/debug", "RECEIVED TURNOFF REQUEST");
-    Switch::rcSwitch->switchOff(SWITCH_GROUP, this->number);
-    rcSwitch->disableTransmit();
+    Switch::rcSwitch.switchOff(SWITCH_GROUP, this->number);
+    //Switch::rcSwitch->disableTransmit();
 }

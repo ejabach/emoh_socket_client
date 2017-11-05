@@ -8,7 +8,7 @@
 #define ACTION_TOGGLE "toggle"
 #define ACTION_TURNON "turnOn"
 #define ACTION_TURNOFF "turnOff"
-#define GPIO_PIN 10
+#define GPIO_PIN 0
 #define SWITCH_GROUP "01001"
 
 #include <string>
@@ -21,7 +21,7 @@ class Switch : public Device
 {
 
 private:
-    static RCSwitch *rcSwitch;
+    static RCSwitch rcSwitch;
 
     int number;
     void handleMessageArrived(const string topic, const string payload) override;
